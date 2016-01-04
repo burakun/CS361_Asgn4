@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses List</title>
+</head>
+<body>
+<h1>Courses</h1>
+<ul>
+{% for item in course_list %}
+ <li>{{ item.name }}, {{ item.code }}, {{ item.classroom }}, {{ item.times }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
